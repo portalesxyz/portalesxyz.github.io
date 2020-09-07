@@ -1,0 +1,63 @@
+/* the body contains everything on the page*/
+body {
+  font-family: Cooper Hewitt;
+  font-size:  16px;
+  color: #ffffff;
+  background-color: #004d9d;
+  line-height:  1.5;
+}
+
+h1 {
+  font-size:  24px;
+  font-weight: 700;
+}
+
+a {
+  color: #ffffff;
+  /* Removes default underline */
+  text-decoration:  none;
+}
+
+a:hover{
+  color: #dddddd;
+}
+
+section {
+  /* vh stands for viewport height */
+  height: 100vh;
+  width:  100%; 
+  background-size: cover;
+  background-attachment:  fixed;
+}
+
+section.image_1 {
+  background-image: url(sally_2.jpg);
+}
+
+section.image_2 {
+  background-image: url(sally_3.jpg);
+}
+
+section.image_3 {
+  background-image: url(sally_4.jpg);
+}
+
+section.image_4 {
+  background-image: url(sally_7.jpg);
+}
+
+header {
+  position:  fixed;
+  top: 40px;
+  left:  40px;
+}
+
+footer {
+  position:  fixed;
+  bottom: 40px;
+  left:  40px;
+}
+
+footer a {
+  margin-right:  20px;
+}
