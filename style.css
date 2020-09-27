@@ -1,63 +1,56 @@
-/* the body contains everything on the page*/
 body {
-  font-family: Cooper Hewitt;
-  font-size:  16px;
-  color: #ffffff;
-  background-color: #004d9d;
-  line-height:  1.5;
+position: relative;
+  height: 90vh;
+	font-family: happy-times;
+	font-size: 16px;
+	line-height: 1.5;
+	
+	background-color: #ffffff;
+	color: #333333;
+	margin: 40px auto 40px auto;
+	width: 680px;
 }
 
 h1 {
-  font-size:  24px;
-  font-weight: 700;
+	font-size: 50px;
+	font-weight: 700;
+	margin-left: -140px 
+}
+img.hidden {
+  display: none;
+}
+p {position:absolute;
+  top: 50%;
+  font-weight: bold;
+font-size: 24px}
+
+img {position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+max-height: 70vh;}
+
+a {text-decoration: none;
+color: rgb(51, 51, 51);}
+
+a:hover {text-decoration: line-through;}
+
+footer {position: absolute;
+bottom: 50px;
 }
 
-a {
-  color: #ffffff;
-  /* Removes default underline */
-  text-decoration:  none;
+footer:hover {text-decoration: underline; color: rgba(56, 182, 189, 1)}
+footer:hover a {text-decoration: underline; color: rgba(56, 182, 189, 1)}
+
+
+@font-face {
+  font-family: 'happy-times';
+  src: url("happy.woff");
+  font-weight: normal;
 }
 
-a:hover{
-  color: #dddddd;
-}
-
-section {
-  /* vh stands for viewport height */
-  height: 100vh;
-  width:  100%; 
-  background-size: cover;
-  background-attachment:  fixed;
-}
-
-section.image_1 {
-  background-image: url(sally_2.jpg);
-}
-
-section.image_2 {
-  background-image: url(sally_3.jpg);
-}
-
-section.image_3 {
-  background-image: url(sally_4.jpg);
-}
-
-section.image_4 {
-  background-image: url(sally_7.jpg);
-}
-
-header {
-  position:  fixed;
-  top: 40px;
-  left:  40px;
-}
-
-footer {
-  position:  fixed;
-  bottom: 40px;
-  left:  40px;
-}
-
-footer a {
-  margin-right:  20px;
+@font-face {
+  font-family: 'happy-times';
+  src: url("happy-bold.woff2");
+  font-weight: bold;
 }
